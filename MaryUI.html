@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="dropdown.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <input type="checkbox" name="" id="check">
+        <div class="logo-container">
+          <h3 class="logo">Mary <span>UI</span></h3>
+        </div>
+
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-links" style="--i: .6s"><a href="#container1">Home</a></li>
+              <li class="nav-links" style="--i: .85s">
+                <a href="#" >Menu <i class="bi bi-caret-down"></i></a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link"><a href="#">Team</a></li>
+                    <li class="dropdown-link"><a href="#feedback1">Feedback</a></li>
+                    <li class="dropdown-link">
+                      <a href="#ptagg1">Testimonial<i class="bi bi-caret-down"></i></a>
+                      <div class="dropdown second">
+                        <ul>
+                          <li class="dropdown-link"><a href="#rate1">Rate</a></li>
+                          <li class="dropdown-link"><a href="#">Link 2</a></li>
+                          <li class="dropdown-link"><a href="#">Link 3 </a></li>
+                          <li class="dropdown-link"><a href="#">More <i class="bi bi-caret-down"></i></a>
+                            <div class="dropdown second">
+                                <ul>
+                                    <li class="dropdown-link"><a href="#">Link 1</a></li>
+                                    <li class="dropdown-link"><a href="#">Link 2</a></li>
+                                    <li class="dropdown-link"><a href="#">Link 3 <i class="bi bi-caret-down"></i></a></li>
+                                    <div class="arrow"></div>          
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown-link"><a href="#application1">Apply</a></li>
+            <div class="arrow"></di>     
+          </ul>
+                </div>
+              </li>
+              <li class="nav-links" style="--i: 1.1s">
+                <a href="#">Service <i class="bi bi-caret-down"></i></a>
+                <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link"><a href="#">Sale of Accessories</a></li>
+                      <li class="dropdown-link"><a href="#">Guidance</a></li>
+                      <li class="dropdown-link">
+                        <a href="#">Website Development</a> </li>            
+          </ul>
+                </div>
+                </li>
+              </li>
+              <li class="nav-links" style="--i: 1.35s"><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="log-sign" style="--i: 1.8s">
+            <a href="signup.html" class="btn transparent">LogIn</a>
+            <a href="signup.html" class="btn solid">SignUp</a>
+          </div>
+        </div>
+
+        <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+                <div></div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="overlay"></div>
+      </section>
+    </main>
+
+    <img src="images/liq3.png" alt=""><br>
+    <div class="container2" id="container1">
+        <h2>WELCOME <span>TO MARYUI</span></h2><br>
+        <p>We are thrilled to have you join our community of innovative developers and designers. 
+            MaryUI is designed to make your development process smoother, faster, and more enjoyable. </p><br     
+    </div>
+
+    <div class="content">
+      <img src="images/img7.png" alt="" class="image1">
+      <div class="text1">
+          <h3>UI Designs at your fingertips</h3>
+          <p>MAryUI is here to give you quality and unique responsive websites desgins for your business and increase productivity</p>
+      </div>
+        <p class="horizontal-line"></p>
+        <p class="horizontal-line2"></p>
+
+      <img src="images/img7.png" alt="" class="image1">
+      <div class="text1">
+        <h3>Guidance in choosing a Website for your business</h3>
+        <p>MAryUI is here to give you quality and unique responsive websites desgins
+        for your business and increase productivity
+        </p>
+      </div>
+      <p class="horizontal-line"></p>
+      <p class="horizontal-line2"></p>
+
+      <img src="images/img7.png" alt="" class="image1">
+      <div class="text1">
+          <h3>Motivational Videos</h3>
+          <p>MaryUI is not just about providing top-notch UI components, it’s also dedicated to inspiring and empowering its users.</p>
+      </div>      
+  </div>
+
+  <div id="ptagg1">
+    <p class="ptagg" >
+      <button class="btn1 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Testimonial
+      </button>
+    </p>
+  </div>
+<div class="collapse1">
+    <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+              <img src="images/user1.jpeg" alt="user1" class="user">
+              <h4>John</h4>
+              Integrating MaryUI into my projects was seamless, 
+              and the customization options allowed me to tailor the UI to my specific needs.
+               It’s a game-changer for anyone looking to create stunning and 
+               responsive web applications quickly and efficiently.
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            <img src="images/user2.jpeg" alt="user1" class="user">
+            <h4>Mike</h4>
+            “Using MaryUI has been a revelation for our development team. 
+            The intuitive design and comprehensive documentation made it easy for us to get started.
+             The components are versatile and have significantly reduced our development time.
+          </div>
+        </div>
+    </div>
+    <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            <img src="images/user3.jpeg" alt="user1" class="user">
+            <h4>Eddy</h4>
+            MaryUI has revolutionized our online accessory store. 
+            The sleek and modern design of the components has enhanced the overall user experience, 
+            making it easier for our customers to browse and purchase products. And our sales have increased massively.
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="rate" >
+  <h3 id="rate1">Rate our site</h3>
+  <select name="feedback" id="selector" class="selector">
+  <option value="5">Boring</option>
+  <option value="4">Nice</option>
+  <option value="3">Kinda intresting</option>
+  <option value="2">Superb</option>
+  </select><br>
+</div>
+
+  <!-----radio---->
+  <div id="feedback1">
+    <div class="feedback">
+      <form action="MaryUI.html">
+        <input type="text" placeholder="Name*" required><br>
+        <input type="text" placeholder="Email*" required><br><br>
+        <textarea placeholder="Message*" class="textarea" required></textarea>
+        <button id="submit" type="submit" class="button">Send Message</button>
+    </form>
+    </div> 
+  </div>
+
+<div class="application" id="application1">
+  <h3> Apply Here</h3>
+  <form action="#">
+    <div class="input-box">
+        <span class="icon"><i class="bi bi-envelope"></i></span>
+        <input type="email" required>
+        <label for="email">Email</label>
+    </div>
+    <div class="input-box">
+        <span class="icon"><i class="bi bi-lock"></i></span>
+        <input type="password" required>
+        <label for="password">Password</label>
+    </div>
+
+    <div>
+        <label for="date">Date Of Birth</label>
+        <input type="date" class="file" required><br>
+    </div>
+
+    <div class="input-box">
+        <span class="icon"><i class="bi bi-geo-alt"></i></span>
+        <input type="text" required>
+        <label for="address">Digital Address</label>
+    </div>
+
+    <label for="name">Gender </label>
+    <input type="radio" name="gender" class="feed1" required>
+    <label for="yes" class="feed">Male</label>
+    <input type="radio" name="gender" class="feed1" required>
+    <label for="No" class="feed">Female</label><br><br>
+
+    <label for="name">Marital status </label>
+    <input type="checkbox" name="marital status" class="feed1" required>
+    <label for="yes" class="feed">Married</label>
+
+    <input type="checkbox" name="marital status" class="feed1" required>
+    <label for="No" class="feed">Single</label><br><br>
+
+    <div class="selector1">
+        <label for="tel">Phone Number</label>
+        <input type="tel" required>
+        <span class="icon"><i class="bi bi-telephone"></i></span>
+    </div>
+
+    <label for="name">Occupation </label>
+    <select name="feedback" id="selector" class="selector1" required>   
+        <option value="5"><a href="#">IT Consultant</a></option>
+        <option value="5"><a href="#">Student</a></option>
+        <option value="5"><a href="#">Computer Engineer</a></option>
+        <option value="5"><a href="#">Lecturer</a></option>
+        <option value="5"><a href="#">IT Technician</a></option>
+        <option value="5"><a href="#">CCTV Personnel</a></option>
+        <option value="5"><a href="#">Sales Manager</a></option>
+    </select><br>
+
+    <label for="date" >City</label>
+    <select name="city" id="" class="selector1">
+        <option value="5">Accra</option>
+        <option value="5">Kumasi</option>
+        <option value="5">Tamale</option>
+        <option value="5">Koforidua</option>
+        <option value="5">Sunyani</option>
+        <option value="5">Cape Coast</option>
+        <option value="5">Takoradi</option>
+        <option value="5">Wa</option>
+        <option value="5">Bolgatanga</option>
+        <option value="5">Ho</option>
+        <option value="5">Kasoa</option>
+        <option value="5">Techiman</option>
+        <option value="5">Sekondi</option>
+        <option value="5">Tema</option>
+    </select><br>
+
+    <label for="fileUpload" name="fileUpload">Choose File</label>
+    <input type="file" class="file"><br><br>
+    <label for="date" >State</label>
+    <select name="state" id="" class="selector1">
+        <option value="5">Greater Accra</option>
+        <option value="5">Ashanti</option>
+        <option value="5">Northern</option>
+        <option value="5">Eastern</option>
+        <option value="5">Bono</option>
+        <option value="5">Central</option>
+        <option value="5">Western</option>
+        <option value="5">Upper West</option>
+        <option value="5">Upper East</option>
+        <option value="5">Volta</option>
+        <option value="5">Oti</option>
+        <option value="5">Bono East</option>
+        <option value="5">Ahafo</option>
+    </select><br>
+
+    <label for="date" >Country</label>
+    <select class="selector1">
+        <option value="5">Ghana</option>
+        <option value="5">Nigeria</option>
+        <option value="5">Togo</option>
+        <option value="5">Benin</option>
+        <option value="5">Cote D'ivoire</option>
+        <option value="5">Cameroon</option>
+        <option value="5">Burkina Faso</option>
+        <option value="5">Mali</option>
+        <option value="5">Senegal</option>
+        <option value="5">Gambia</option>
+        <option value="5">Guinea</option>
+        <option value="5">Guinea Bissau</option>
+        <option value="5">Sierra Leone</option>
+        <option value="5">Liberia</option>
+        <option value="5">Congo</option>
+        <option value="5">Gabon</option>
+        <option value="5">Equatorial Guinea</option>
+        <option value="5">Chad</option>
+        <option value="5">Niger</option>
+        <option value="5">Mauritania</option>
+        <option value="5">Mali</option>
+        <option value="5">Mauritania</option>
+    </select><br>
+    <label for="date" >Postal Code</label>
+    <input type="text" required><br>
+    <label for="date" >Nationality</label>
+    <input type="text" required><br><br>
+    <input type="range" name="range" id="">
+    <button type="submit">
+        <a href="MaryUI.html">Submit</a>
+    </button>
+</form><br><br>
+</div>
+
+<marquee behavior="smooth" direction="left">Thank you for choosing MARYUI............SEE YOU NEXT TIME 👍</marquee>
+    <footer>
+        <ul class="links">
+            <h5 class="pp">Copyright &copy; 2024 All Reserve.</h5>
+            <a href="#"><i class="bi bi-facebook" ></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-tik tok-></i></a>
+        </ul> 
+            <li><a href="MaryUI.html">Home</a></li>
+    </footer>
+  </body>
+</html>
+
+

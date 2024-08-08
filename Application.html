@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <title>Application Forms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to right, rgba(26, 179, 239, 0.655), rgba(239, 29, 10, 0.731));
+        }
+        img{
+            position: absolute;
+            width: 50%;
+            height: 80%;
+            filter: blur(2px);
+            margin: -10% 20% 0 50% ;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        #img{
+            position: absolute;
+            width: 50%;
+            height: 80%;
+            filter: blur(2px);
+            margin: 60% 0% 0 0% ;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+
+        }
+        form{
+            position: relative;
+            margin: 20px 20% 0 ;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            background-color: 0px 10px 20px rgba(229, 225, 225, .7);
+            border: 1px solid #c6c5c5;
+            padding: 10px 20px 5%;
+        }
+        form label{
+            color: rgb(241, 237, 241);
+            font-size: 1.3rem;
+            font-family: cursive;
+            padding-right: 10px;
+        }
+
+        .selector1{
+            display: flex;
+            font-size: 1.1rem;
+            background-color: transparent;
+            letter-spacing: .5px;
+        }
+        .selector1 span{
+            color: rgb(241, 237, 241);
+        }
+        
+        form input, select{
+            border: none;
+            padding: 10px ;
+            margin: 5px 0% 0% 0;
+            text-align: center;
+            outline: none;
+            border-bottom: 1px solid #c6c5c5;
+            background-color: transparent;
+        }
+        header h1{
+            position: relative;
+            margin: 5% 30% 0 ;
+            color: rgb(244, 244, 245);
+            font-family: cursive;
+        }
+        .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #808080;
+            margin: 20px 0;
+        }
+
+        .input-box span{
+            color: #c9dbe9;
+            position: absolute;
+            right: 50px;
+            line-height: 57px;
+        }
+
+        .input-box input{
+            width: 270px;
+            height: 40px;
+            margin-top: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0 35px 0 5px;
+            border: none;
+            color: #fff;
+            outline: none;
+            background-color: transparent;
+        }
+        .input-box label{
+            position: absolute;
+            top: 60%;
+            left: 5px;
+            padding: 0 5px;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            color: #c9dbe9;
+            font-weight: 500;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .input-box input:focus~label,
+        .input-box input:valid~label{
+            top: 0px;
+        }
+
+        .feed{
+            color: rgb(6, 12, 97);
+
+        }
+        button{
+            border: none;
+            background-color: transparent;
+        }
+
+        button a{
+            text-decoration: none;
+            color: #cfcfcf;
+            font-family: cursive;
+            font-size: 1.1rem; 
+            padding: 5px 30px ;
+            background: linear-gradient(to right, rgba(239, 26, 179, 0.74), rgba(10, 186, 239, 0.783));  
+            transition: .4s;
+            border-bottom-right-radius: 30px;   
+        }
+        button a:hover{
+            background: linear-gradient(to right, rgba(239, 26, 26, 0.413), rgba(10, 155, 239, 0.511));
+            color: rgb(239, 242, 245);
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="images/img7.png" alt="image">
+    <img src="images/img7.png" alt="image" id="img">
+    <header>
+        <h1>Fill In The Application Forms</h1>
+    </header>
+    <form action="#">
+        <div class="input-box">
+            <span class="icon"><i class="bi bi-envelope"></i></span>
+            <input type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><i class="bi bi-lock"></i></span>
+            <input type="password" required>
+            <label for="password">Password</label>
+        </div>
+ 
+        <div>
+            <label for="date">Date Of Birth</label>
+            <input type="date" required><br>
+        </div>
+
+        <div class="input-box">
+            <span class="icon"><i class="bi bi-geo-alt"></i></span>
+            <input type="text" required>
+            <label for="address">Digital Address</label>
+        </div>
+
+        <label for="name">Gender </label>
+        <input type="radio" name="gender" class="feed1" required>
+        <label for="yes" class="feed">Male</label>
+        <input type="radio" name="gender" class="feed1" required>
+        <label for="No" class="feed">Female</label><br><br>
+
+        <label for="name">Marital status </label>
+        <input type="checkbox" name="marital status" class="feed1" required>
+        <label for="yes" class="feed">Married</label>
+
+        <input type="checkbox" name="marital status" class="feed1" required>
+        <label for="No" class="feed">Single</label><br><br>
+
+        <div class="selector1">
+            <label for="tel">Phone Number</label>
+            <input type="tel" required>
+            <span class="icon"><i class="bi bi-telephone"></i></span>
+        </div>
+
+        <label for="name">Occupation </label>
+        <select name="feedback" id="selector" class="selector1" required>   
+            <option value="5"><a href="#">IT Consultant</a></option>
+            <option value="5"><a href="#">Student</a></option>
+            <option value="5"><a href="#">Computer Engineer</a></option>
+            <option value="5"><a href="#">Lecturer</a></option>
+            <option value="5"><a href="#">IT Technician</a></option>
+            <option value="5"><a href="#">CCTV Personnel</a></option>
+            <option value="5"><a href="#">Sales Manager</a></option>
+        </select><br>
+
+        <label for="date" >City</label>
+        <select name="city" id="" class="selector1">
+            <option value="5">Accra</option>
+            <option value="5">Kumasi</option>
+            <option value="5">Tamale</option>
+            <option value="5">Koforidua</option>
+            <option value="5">Sunyani</option>
+            <option value="5">Cape Coast</option>
+            <option value="5">Takoradi</option>
+            <option value="5">Wa</option>
+            <option value="5">Bolgatanga</option>
+            <option value="5">Ho</option>
+            <option value="5">Kasoa</option>
+            <option value="5">Techiman</option>
+            <option value="5">Sekondi</option>
+            <option value="5">Tema</option>
+        </select><br>
+
+        <label for="fileUpload" name="fileUpload">Choose File</label>
+        <input type="file"><br><br>
+        <label for="date" >State</label>
+        <select name="state" id="" class="selector1">
+            <option value="5">Greater Accra</option>
+            <option value="5">Ashanti</option>
+            <option value="5">Northern</option>
+            <option value="5">Eastern</option>
+            <option value="5">Bono</option>
+            <option value="5">Central</option>
+            <option value="5">Western</option>
+            <option value="5">Upper West</option>
+            <option value="5">Upper East</option>
+            <option value="5">Volta</option>
+            <option value="5">Oti</option>
+            <option value="5">Bono East</option>
+            <option value="5">Ahafo</option>
+        </select><br>
+
+        <label for="date" >Country</label>
+        <select class="selector1">
+            <option value="5">Ghana</option>
+            <option value="5">Nigeria</option>
+            <option value="5">Togo</option>
+            <option value="5">Benin</option>
+            <option value="5">Cote D'ivoire</option>
+            <option value="5">Cameroon</option>
+            <option value="5">Burkina Faso</option>
+            <option value="5">Mali</option>
+            <option value="5">Senegal</option>
+            <option value="5">Gambia</option>
+            <option value="5">Guinea</option>
+            <option value="5">Guinea Bissau</option>
+            <option value="5">Sierra Leone</option>
+            <option value="5">Liberia</option>
+            <option value="5">Congo</option>
+            <option value="5">Gabon</option>
+            <option value="5">Equatorial Guinea</option>
+            <option value="5">Chad</option>
+            <option value="5">Niger</option>
+            <option value="5">Mauritania</option>
+            <option value="5">Mali</option>
+            <option value="5">Mauritania</option>
+        </select><br>
+        <label for="date" >Postal Code</label>
+        <input type="text" required><br>
+        <label for="date" >Nationality</label>
+        <input type="text" required><br><br>
+
+        <button type="submit">
+            <a href="index.html">Submit</a>
+        </button>
+       
+    </form>
+
+</body>
+</html>
